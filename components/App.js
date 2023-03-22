@@ -7,10 +7,9 @@ import NotFind from './NotFind'
 export default function App() {
   const [movieName, setMovieName] = useState("");
   const [movieList, setMovieList] = useState([]);
-  const [found, setFound]=useState("True");
+  const [found, setFound]=useState("true");
 
   const getMovies = (movie) => {
-
     fetch(`https://www.omdbapi.com/?apikey=b2f63315&s=${movie}`)
       .then(res => res.json())
       .then(data => { 
@@ -37,6 +36,7 @@ export default function App() {
   return (
     <>
       <div className='main_container'>
+        <h1>Movie Day</h1>
       <div className="container my-5">
         <Search value={movieName} onChange={setMovie} onKeyPress={getMovieList}/><br/>
         <div className='movie_list container'>

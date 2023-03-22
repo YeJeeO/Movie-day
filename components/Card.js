@@ -2,7 +2,7 @@ const Card = ({prop}) => {
     if(prop.Poster==="N/A")
       prop.Poster="../../movie_star_312306.webp";
       return (
-      <div className="card my-3 mx-3" style={{width: "18rem"}} key={prop.key}>
+      <div className="card-base" key={prop.key}>
         <img src={prop.Poster} className="card-img-top" alt={prop.Title} />
         <div className="card-body">
           <h5 className="card-title">{prop.Title}</h5>
