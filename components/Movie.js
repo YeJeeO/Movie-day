@@ -4,7 +4,7 @@ import Search from './Search';
 import Footer from './Footer';
 import NotFind from './NotFind'
 
-export default function App() {
+export default function Movie() {
   const [movieName, setMovieName] = useState("");
   const [movieList, setMovieList] = useState([]);
   const [found, setFound]=useState("true");
@@ -16,7 +16,7 @@ export default function App() {
         if(data.response==="False")
           setFound(data.response)
         else{
-          setFound("True");
+          setFound("true");
           setMovieList(data.Search);
         }
       })
