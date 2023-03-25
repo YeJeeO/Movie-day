@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "OMDb API: https://www.omdbapi.com/?i=tt3896198&apikey=b2f63315",
   "main": "index.js",
+
+ 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
